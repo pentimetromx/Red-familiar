@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Rubik+80s+Fade&display=swap'); 
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    BLUR PARA LASIMAGENES      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.image-container1 {
+  display: flex;
+  left: 1%;
+  width: 98%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-container2 {
+  flex: 1;
+}
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.imgn {
+  height: auto;
+  width: 100%; /* Las imágenes ocuparán el ancho completo de su contenedor */
+  border-radius: 17px;
+  cursor: pointer  
+}
+.pixelate {
+  filter: url(#pixelate-filter);
+}
+
+@keyframes pixelate-animation {
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: url(#pixelate-filter);
+  }
+  
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+body {
+  font-family: 'Audiowide', cursive;  
+  /* background-image: url(./assets/degradadoMulicolor1.jfif);  */ 
+  background-image: url(./assets/indigo%20corrosivo.jpg);        
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  padding: 0; /* Elimina los rellenos predeterminados del body */ 
+  overflow: hidden;
+}
+.slider {
+  background-color: gray;  /* Establece el color de fondo del slider en negro */
+  width: 1272px;  /* Establece el ancho del slider al 100% del contenedor */
+  height: 27px;  /* Establece la altura del slider en 100 píxeles */
+  overflow: hidden;  /* Oculta cualquier contenido que exceda los límites del slider */
+  position: relative;  /* Establece la posición del slider como relativa para permitir posicionar elementos hijos de forma absoluta */
+}
+
+.slider-text {
+  position: absolute;  /* Establece la posición del texto del slider como absoluta para posicionarlo dentro del slider */
+  top: 50%;  /* Posiciona el texto verticalmente en el centro del slider */
+  left: 100%;  /* Posiciona el texto inicialmente fuera del slider en el lado derecho */
+  transform: translate(-50%, -50%);  /* Centra el texto horizontalmente y verticalmente en relación al punto de referencia */
+  color:rgba(0, 0, 255);  /* Establece el color del texto en blanco */
+  font-size: 24px;  /* Establece el tamaño de fuente del texto en 24 píxeles */
+  white-space: nowrap;  /* Evita que el texto se divida en varias líneas */
+  animation: slide 20s linear infinite;  /* Aplica la animación "slide" al texto del slider con una duración de 15 segundos, un      movimiento lineal y repetición infinita */
+}
+
+@keyframes slide {
+  0% { left: 150%; }  /* Define la posición inicial del texto fuera del slider en el lado derecho */
+  100% { left: -100%; }  /* Define la posición final del texto fuera del slider en el lado izquierdo */  
+}
+#conte-escudos{
+  position: relative;
+  top:22%;
+  left: 5vw;
+  width: 90vw;
+  height: 33vh;
+  display: grid;
+  cursor: pointer;
+  gap: 1vw;
+  grid-template-columns: repeat(6, 1fr);
+}
+.image {
+  width:100%;
+  height:100%;
+  margin-left: 10px;  
+  border-radius: 17px;
+  border-color: yellow; 
+  transition: transform 0.3s;
+}
+.container-Ini {
+  position: relative;
+  display: flex;
+  top: -3vh;
+  left:15vw ;
+  width: 70vw;
+  height: 20vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imagenes-i {    /* PADRE */ 
+  display: flex;
+  flex-direction: column; 
+  overflow-y: hidden;
+  height: 477px;
+  margin-top: 17px;
+}
+.etiqueta {
+  position: relative;
+  top: 1vh;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: -5px;
+  text-align: center;  
+  color: #FFD700; /* dorado */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.contenedor-secundario {  /* IMAGENES */      
+  margin-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+}
+.contenedor-secundario img{          
+  width: 220px;
+  height: 220px;
+  border-radius: 17px;
+  border: 13px solid gray; 
+  background-repeat: no-repeat;
+  background-position: 10px 0; /* Aquí puedes ajustar los valores para mover la imagen lateralmente */   
+  margin-right: -5px;    
+  margin-top: -5px;
+}
+.botones {  /*contenedor de botones */
+  position: absolute;
+  display: flex;
+  display: none;
+  top: 7vh;
+  flex-direction: column;
+  justify-content: center;      
+  align-items: center;
+  overflow-y: hidden;
+  height: 587px;
+}
+.contBotBotonera{
+  position: relative;
+  top: 4%;
+}
+.boton {
+  width: 240px;
+  height: 320px;
+  box-sizing: border-box; 
+  padding: 10px; 
+  margin: 1.7px; 
+}
+.image-container {      /* CONTENEDOR HIJO FOTOS DE BOTONERA */
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+.image-container img {  /* FOTOS DE BOTONERA */
+  margin-right: -20px;
+  border-radius: 17px;
+  margin-right:-6px ;
+  border: 13px solid gray; 
+  background-repeat: no-repeat;
+  background-position: 10px 0; /* Aquí puedes ajustar los valores para mover la imagen lateralmente */ 
+  animation: moveImage 0.1s linear forwards; /* Transición de 1 segundo */
+  transition: filter 1s;
+}
+.button {
+  position: relative;
+  display: inline-block;      
+  width: 47%;
+  height: 50%;
+  padding: 15px 1px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color:yellow;
+  border: 1.5px solid rgb(180, 180, 31);
+  cursor: pointer;
+  border-radius: 13px;
+  letter-spacing: 4px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: oblique;   
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  background-color: blue;
+  transition: background-color 0.3s ease,transform 0.8s;
+}
+.button:hover,
+.button:focus{
+  background: #00ff00;
+  box-shadow: 0 0 100px #00ff00, 0 0 40px #ff0000, 0 0 80px #ffff00;       
+  color: blue;
+}
+
+/* .imagen-mama {
+  margin-right: -17px;
+  width: 300px;           
+  height: 257px;
+} */
+.imagen-sara {
+  width: 300px;
+  height: 200px;
+}            
+.button-container {  /* CONT/BOTON/IMAGENES */  
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container button{   
+  width: 300px;
+  height: 57px;
+  font-size: 16px;  
+  background-color: blue;  
+  color: yellow;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-right: 15px;
+}
+.video-v {   /* PADRE VIDEOS */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+  max-width: 1333px;
+  height: 415px;
+  padding: -7px;
+}
+
+.boton-personal{
+  position: relative;
+  display: grid;
+  top: 1%;
+  left: 1%;
+  width: 70%;
+  height:10%;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.botones-control{
+  gap: 3px;
+}
+
+#boton-cata-v{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.botDescManola button{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  width: 300px;
+  height: 57px;
+  font-size: 16px;
+  background-color: blue; 
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contManola{
+  display: flex;
+  align-items: flex-start;
+}
+
+.btnI {
+  position: relative;
+  display: flex;
+  width:100%;
+  height:100%;
+  font-size: 0.8em;
+  margin-top: 5%;
+  background-color: blue; 
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  border: none;
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.botonBotonera{   
+  width: 300px;
+  height: 57px;
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: blue;  
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.descripcion{
+  position: absolute;
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  flex-direction: column; /* hijos en columna */
+  align-items: center;  
+  top: 20vh;
+  display: none;
+  font-size:1.2em;
+  color: whitesmoke;
+  z-index: 1;
+}
+.descripcion img {
+  position: relative;
+  top: -10%;
+  left: 1%;
+  height:55%;
+  width: 19%;
+  border-radius: 17px;
+  border: 13px solid gray; 
+  background-repeat: no-repeat;
+}
+.descripciones{
+  position: relative;
+  width: 90%;
+  left:0%;
+}
+.imagen-sara {
+  width: 300px;
+  height: 250px;
+}
+#botonera {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    height: 64vh;
+}
+.text {
+  display: inline-block;
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.button-containerVid{  /* HIJO BOTONES VIDEOS */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 9%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ajustamos el z-index para que los botones aparezcan encima del contenedor */
+}
+.button-containerVid button{  /* BOTONES VIDEOS */        
+  margin-top: 137px;
+  width: 300px;
+  height: 57px;
+  margin-right: 27px;
+  font-size: 16px;
+  background-color: blue; 
+  color: yellow;  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; /* Añadimos position: relative para que el z-index funcione correctamente */
+  z-index: 3; /* Ajustamos el z-index para que los botones aparezcan encima del contenedor */
+}
+.contVideosWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;  
+  top:26%;
+  left: 1%;
+  height: 70vh;
+  width: 98vw;
+  overflow: hidden;
+  z-index: 1; /* Aseguramos que el contenedor esté por debajo de los botones */
+}
+.contVideos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+}
+.video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: black; /* por si hay margen vacío */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;  
+  cursor: pointer;
+}
+
+
+
+
+
+.slider {
+  background-color: gray;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+.slide {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 5s linear infinite;
+  text-align: center; 
+}
+.slider .slide {
+  animation: slide 25s linear infinite; /* Aplica la animación "slide" al texto del slider con una duración de 15 segundos, un movimiento lineal y repetición infinita */
+}
+.slider .slide:nth-child(1) {
+  animation-name: slide-right;
+}
+.slider.reverse .slide:nth-child(1) {
+  animation-name: slide-left;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FULL SCREEN IMAGENES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Estilos para las imágenes en su estado normal */
+.imagen-fullscreen {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Estilos para el contenedor en pantalla completa */
+.imagen-fullscreen-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.95); /* Fondo oscuro con transparencia */
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para las imágenes en pantalla completa */
+.imagen-fullscreen-container img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* Estilos para el botón de cierre en pantalla completa */
+.imagen-fullscreen-container .btn-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);              
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<          AL PASAR MOUSSE                    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.image:hover {
+  transform: scale(0.9);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<         IMAGENES TAMAÑO AUTOMATICO         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.enlarged {
+  transform: scale(1.3);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@keyframes moveImage {
+  100% {
+    transform: translateX(0);      
+  }
+  0% {
+    transform: translateX(1300px); /* Cambia el valor de la transformación según tus necesidades */
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@keyframes zoomEffect1 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(4);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes zoomEffect2 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(4);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes zoomEffect3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(4);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes zoomEffect4 {
+  0% {
+      transform: scale(1);           
+  }
+  50% {
+      transform: scale(4);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.button.scale {
+  transform: scale(20);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<DIVISION<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.contenedor {
+  display: none;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* SECCION PARA DISPOSITIVOS */ 
+
+@media screen and (max-width: 650px)
+{
+  /* Estilos específicos para dispositivos móviles con ancho máximo de 600px */      
+  .slider-text {
+  margin-left: 10px;  
+  margin-right: 10px;
+  }
+  .text {
+  margin-right: 10px;
+  }
+  .etiqueta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center; 
+  justify-content: center;  
+  margin-top: -5px; 
+  }
+  .container-Ini {
+  margin-top: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .image {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  }
+  .descripcion {
+    position: relative;
+    z-index: 1;
+  }
+  .video-item1 {
+  height:110px;
+  margin-bottom: 20px;  
+  }
+  .contVideosWrapper {
+    overflow-y: hidden;
+    max-height: calc(100% - 127px);
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .contenedor-secundario{
+    overflow-y: hidden;
+    max-height: calc(100% - 97px); /* Ajusta la altura máxima del contenedor para mostrar una cantidad específica de videos sin desbordar */
+    position: fixed;
+    bottom: 0; /* Ajusta el contenedor para que inicie desde la parte inferior de la pantalla */
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambiamos a column para que los elementos se apilen desde la parte inferior hacia arriba */
+    z-index: 1; /* Aseguramos que el contenedor esté por debajo de los botones */
+
+  }
+  .contBotones {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  }
+  .contBotones button {
+  background-color:orangered;
+  color:whitesmoke;
+  border-radius: 6px;
+  width: 240px;
+  height: 60px;
+  margin-right: 16px;
+  margin-top: 10px;
+  }
+  .boton-personal { 
+  display: flex;
+  flex-direction: row;
+  }
+  .botOlga{
+  margin-top: 180px;
+  }
+  .descripcion{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;      
+  align-items: center; 
+  margin-top: 17px;
+  font-size: 20px;
+  color: blue;
+  margin-left: 17px; 
+
+  position: relative;
+  z-index: 1;
+  }
+  .image-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  } 
+  .image-container1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .image-container1 img:first-child {
+    margin-left: 10px;
+  }
+  .image-container1 img:last-child {   
+    margin-right: 10px;
+  }
+  #imagenes-mama {
+    height: 100vh; /* Establece la altura al 100% del alto visible en la pantalla del dispositivo */    
+    height: 100%; /* Establece la altura al 100% del contenedor padre (#imagenes-mama) */
+  }
+  .imagenes-i {    /* PADRE IMAGENES */ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contManola{
+    margin-left: 117px;   
+  } 
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CONTRASEÑAS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  #password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }  
+  .password-container {
+    background-color:red;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    z-index: 99999;
+  } 
+  .button-containerVid {
+    display: flex;
+    margin-top: 7px;   
+  }
+
+  .botonBotonera{   
+    width: 400px;
+    height: 87px;
+    margin-right: 10px;
+    font-size: 57px;
+    background-color: blue; 
+    color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+}
+
