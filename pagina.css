@@ -55,6 +55,27 @@ body {
   padding: 0; /* Elimina los rellenos predeterminados del body */ 
   overflow: hidden;
 }
+video:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* ajusta sin recortar */
+  background-color: black;
+}
+
+video:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-color: black;
+}
+
+video:-moz-full-screen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-color: black;
+}
+
 .slider {
   background-color: gray;  /* Establece el color de fondo del slider en negro */
   width: 1272px;  /* Establece el ancho del slider al 100% del contenedor */
@@ -144,8 +165,8 @@ body {
   border: 13px solid gray; 
   background-repeat: no-repeat;
   background-position: 10px 0; /* Aquí puedes ajustar los valores para mover la imagen lateralmente */   
-  margin-right: -5px;    
-  margin-top: -5px;
+  margin-right:5px;    
+  margin-top:5px;
 }
 .botones {  /*contenedor de botones */
   position: absolute;
@@ -407,7 +428,7 @@ body {
 .contVideos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
   gap: 10px;
   width: 100%;
   max-width: 1200px;
