@@ -209,6 +209,7 @@ function hideDescDesc(elementId) {            // DESCRIPCION / DESCRIPCION
 
 
 function hideInicBotonera(elementID) {
+  solicitarPantallaCompleta()  
  // INICIALES / BOTONERA
  var elementsToHide = document.querySelectorAll('.etiqueta, .button, .image');
 
@@ -428,4 +429,15 @@ function ajustarTamañoImagen(idPadre, ancho, alto) {
   imagen.style.height = '100%';
   imagen.style.objectFit = 'fill'; // fuerza adaptación exacta
   imagen.style.objectPosition = 'center';
+}
+
+function solicitarPantallaCompleta() {
+  const docEl = document.documentElement;
+  if (docEl.requestFullscreen) {
+    docEl.requestFullscreen();
+  } else if (docEl.webkitRequestFullscreen) {
+    docEl.webkitRequestFullscreen();
+  } else if (docEl.msRequestFullscreen) {
+    docEl.msRequestFullscreen();
+  }
 }

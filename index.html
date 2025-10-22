@@ -975,8 +975,12 @@
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>  
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-mama')" >Atras</button> 
             </div> 
+
             <div class="contVideosWrapper">  
                 <div class="contVideos">
+                    <div class="video-container">
+                        <video onclick="toggleFullscreenAndPlay('video0')" id="video0" src="./assets/mamá tango .mp4"></video>  
+                    </div>
                     <div class="video-container">
                         <video onclick="toggleFullscreenAndPlay('video1')" id="video1" src="./assets/video1.mp4"></video>  
                     </div>
@@ -1003,6 +1007,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div id="video-nena" class="video-v" style="display: none;">     
@@ -1517,15 +1522,18 @@
                 
 
 
-        <div id="imagenes-mama" class="imagenes-i" style="display: none;">    
+        <div id="imagenes-mama" class="imagenes-i" style="display: none;"> 
+
             <div class="button-containerVid">
                 <button class="btn" onclick="hideImagVideo('video-mama')">Videos de Olga</button>               
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="botonBotonera"onclick="irContenedorAnterior('imagenes-mama')" >Atras</button> 
             </div>
+
             <div class="contVideosWrapper">  
                 <div class="contenedor-secundario">               
-                    <img class="imagen-fullscreen" src="./assets/mama.jpg"> 
+                    <img class="imagen-fullscreen" src="./assets/mama.jpg">
+                    <img class="imagen-fullscreen" src="./assets/mamá Mario .jpg"> 
                     <img class="imagen-fullscreen" src="./assets/las Pinedas .png">    
                     <img class="imagen-fullscreen" src="./assets/mama24.jpg" alt="Imagen 2">  
                     <img class="imagen-fullscreen" src="./assets/mama1.jpg" alt="Imagen 3">
