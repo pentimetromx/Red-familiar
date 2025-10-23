@@ -304,7 +304,7 @@ function toggleButton(button) {
 }
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FULL SCREEN IMAGENES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
  const imagenesFullscreen = document.querySelectorAll('.imagen-fullscreen');
  const fullscreenContainer = document.getElementById('imagen-fullscreen-container');
 
@@ -326,7 +326,66 @@ document.addEventListener('DOMContentLoaded', function () {
    // Ocultar el contenedor de imagen en pantalla completa
    fullscreenContainer.style.display = 'none';
  });
+}); */
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const imagenesFullscreen = document.querySelectorAll('.imagen-fullscreen');
+  const fullscreenContainer = document.getElementById('imagen-fullscreen-container');
+  let indiceActual = 0;
+  let startX = 0;
+
+  imagenesFullscreen.forEach(function (imagen, i) {
+    imagen.addEventListener('click', function () {
+      indiceActual = i;
+      mostrarImagen(indiceActual);
+    });
+  });
+
+  function mostrarImagen(indice) {
+    const imagen = imagenesFullscreen[indice];
+    if (!imagen) return;
+
+    const imagenClonada = imagen.cloneNode(true);
+    imagenClonada.classList.add('imagen-fullscreen-full');
+    fullscreenContainer.innerHTML = '';
+    fullscreenContainer.appendChild(imagenClonada);
+    fullscreenContainer.style.display = 'block';
+  }
+
+  // Cerrar fullscreen al tocar la imagen
+  fullscreenContainer.addEventListener('click', function () {
+    fullscreenContainer.style.display = 'none';
+  });
+
+  // Soporte táctil para cambiar de imagen
+  fullscreenContainer.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  fullscreenContainer.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const deltaX = endX - startX;
+
+    // Solo considerar desplazamientos horizontales amplios
+    if (Math.abs(deltaX) > 50) {
+      if (deltaX > 0) {
+        // Deslizar a la derecha → imagen anterior
+        indiceActual--;
+        if (indiceActual < 0) indiceActual = imagenesFullscreen.length - 1;
+      } else {
+        // Deslizar a la izquierda → siguiente imagen
+        indiceActual++;
+        if (indiceActual >= imagenesFullscreen.length) indiceActual = 0;
+      }
+      mostrarImagen(indiceActual);
+    }
+  });
 });
+
+
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FULL SCREEN VIDEOS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
