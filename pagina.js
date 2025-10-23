@@ -9,18 +9,12 @@ const botonesMira = document.getElementById('botones-mira')
 const botonesGarcia = document.getElementById('botones-garcia') 
 const videosContenedor = document.getElementById('video-v')
 const imagenes = document.querySelectorAll('imagenes-i')
-
-
 function vuelveaInicio() {
- // Obtener todos los elementos de audio en la página
  var audios = document.getElementsByTagName('audio');
-
- // Recorrer todos los elementos de audio y detener su reproducción
  for (var i = 0; i < audios.length; i++) {
    audios[i].pause();
    audios[i].currentTime = 0;
  }
-
  var elementsToHide = document.querySelectorAll('.video-v, .botones, .imagenes-i, .descripcion');   
  for (var i = 0; i < elementsToHide.length; i++) {
      elementsToHide[i].style.display = 'none';
@@ -34,10 +28,8 @@ function vuelveaInicio() {
  idsArray = [];
 
   enlargeImages()    
-  /* setTimeout(startImageTransition, 600); */          
+          
 }
-
-// Función para detener la reproducción de todos los elementos de audio
 function detenerReproduccionAudios() {
   var audios = document.getElementsByTagName("audio");
   for (var i = 0; i < audios.length; i++) {
@@ -45,37 +37,46 @@ function detenerReproduccionAudios() {
     audios[i].currentTime = 0;
   }
 }
-
-// Función para ir al contenedor anterior
 function irContenedorAnterior() {
 
-  // Ocultar el contenedor actual
   var contenedorActual = document.getElementById(idsArray[idsArray.length - 1]);
   contenedorActual.style.display = 'none';
 
-  // Obtener el ID del contenedor anterior
   var previousElementID = idsArray[idsArray.length - 2];
   var contenedorAnterior = document.getElementById(previousElementID);
-  contenedorAnterior.style.display = 'flex';
+  if(
+    contenedorAnterior.className==='descripcion' || 
+    contenedorAnterior.className==='botones'){
+    contenedorAnterior.style.display = 'flex'
+  }else{                                          
+  contenedorAnterior.style.display = 'grid'
+  }
 
-  // Actualizar el array quitando el último ID almacenado
+    Array.from(contenedorAnterior.querySelectorAll('*')).forEach(hijo => {
+    hijo.style.display = '';
+    hijo.style.visibility = 'visible';
+    hijo.style.opacity = '1';
+  });
+
+
   idsArray.pop();
+  console.log(idsArray)
 
-  // Actualizar la variable currentID con el nuevo ID
   currentID = previousElementID;
+  /* if(currentID==='descripcion-olga')alert() */
 
   if (idsArray.length === 1) {
-    // Si solo existe un elemento en el array, detener los audios
     detenerReproduccionAudios();
   }
 }
 
 function hideBotDescrip(elementId, buttonId) {
-  const img = document.getElementById(buttonId);
+  const img = document.getElementById(buttonId); 
   img.classList.add('pixelate');
 
   if (!idsArray.includes(elementId)) {
     idsArray.push(elementId);
+     console.log(idsArray)
   }
 
   setTimeout(function() {
@@ -97,9 +98,7 @@ function hideBotDescrip(elementId, buttonId) {
     }
   }, 500);
 }
-
-
-function hideDescripVideos(elementId) {       // DESCRIPCION / VIDEOS
+function hideDescripVideos(elementId) { 
 
  var elementsToHide = document.querySelectorAll('.botones, .imagenes-i'); 
  for (var i = 0; i < elementsToHide.length; i++) { 
@@ -108,17 +107,30 @@ function hideDescripVideos(elementId) {       // DESCRIPCION / VIDEOS
  var contenedoresPadre = document.getElementsByClassName('descripcion');
  for (var i = 0; i < contenedoresPadre.length; i++) {
    contenedoresPadre[i].style.display = 'none';
- }
- var videoOlga = document.getElementById(elementId);  
- videoOlga.style.display = 'flex'; 
+ } 
+
+  const padre = document.getElementById(elementId)
+
+  padre.style.display = 'grid';
+    Array.from(padre.querySelectorAll('*')).forEach(hijo => {
+    hijo.style.display = '';
+    hijo.style.visibility = 'visible';
+    hijo.style.opacity = '1';
+  });
+
+
+
+
+
+
 
   // Verificar si el elementoId ya está presente en el array
   if (!idsArray.includes(elementId)) {
     idsArray.push(elementId);
+    console.log(idsArray)
   }
 }
-
-function hideDescripFotos(elementId) {        // DESCRIPCION / FOTOS     
+function hideDescripFotos(elementId) {    
  var elementsToHide = document.querySelectorAll('.botones, .video-v');
  for (var i = 0; i < elementsToHide.length; i++) { 
    elementsToHide[i].style.display = 'none';
@@ -128,21 +140,21 @@ function hideDescripFotos(elementId) {        // DESCRIPCION / FOTOS
    contenedoresPadre[i].style.display = 'none';
  }
  var videoOlga = document.getElementById(elementId);
- videoOlga.style.display = 'flex';
+ videoOlga.style.display = 'grid';
 
-if (elementId === 'imagenes-abuelos') {
-  let abuelos = document.querySelector('#imagenes-abuelos');
+  /* if (elementId === 'imagenes-abuelos') {
+    let abuelos = document.querySelector('#imagenes-abuelos');
 
-  abuelos.style.position = 'absolute';   // o absolute según tu layout
-  abuelos.style.top = '-50vh';
-  abuelos.style.width = '30vw';
-  abuelos.style.height = '50vh';
+    abuelos.style.position = 'absolute';   // o absolute según tu layout
+    abuelos.style.top = '-50vh';
+    abuelos.style.width = '30vw';
+    abuelos.style.height = '50vh';
 
-  // Para centrar contenido dentro de abuelos
-  abuelos.style.display = 'flex';
-  abuelos.style.justifyContent = 'center';
-  abuelos.style.alignItems = 'center';
-}
+    // Para centrar contenido dentro de abuelos
+    abuelos.style.display = 'flex';
+    abuelos.style.justifyContent = 'center';
+    abuelos.style.alignItems = 'center';
+  } */
 
  
   // Verificar si el elementoId ya está presente en el array
@@ -150,9 +162,8 @@ if (elementId === 'imagenes-abuelos') {
     idsArray.push(elementId);
   }
 }
-
-function hideVidImagen(elementId) {           // VIDEOS / FOTOS
- var elementsToHide = document.querySelectorAll('.botones, .video-v');
+function hideVidImagen(elementId) {
+ var elementsToHide = document.querySelectorAll('.botones, .video-v, .video-container');
  for (var i = 0; i < elementsToHide.length; i++) { 
  elementsToHide[i].style.display = 'none';
  }
@@ -161,21 +172,16 @@ function hideVidImagen(elementId) {           // VIDEOS / FOTOS
  contenedoresPadre[i].style.display = 'none';
  }
  var contImagen = document.getElementById(elementId);
- contImagen.style.display = 'flex'; 
+ contImagen.style.display = 'grid'; 
 
- if(elementId === 'imagenes-abuelos'){
-  ajustarTamañoImagen('imagenes-abuelos', 600, 900);
-
-
- }
 
   // Verificar si el elementoId ya está presente en el array
   if (!idsArray.includes(elementId)) {
     idsArray.push(elementId);
+    console.log(idsArray)
   }
 } 
-
-function hideImagVideo(elementId) {           // FOTOS / VIDEOS  
+function hideImagVideo(elementId) { 
  var elementsToHide = document.querySelectorAll('.botones, .imagenes-i');  
  for (var i = 0; i < elementsToHide.length; i++) { 
  elementsToHide[i].style.display = 'none';
@@ -193,7 +199,7 @@ function hideImagVideo(elementId) {           // FOTOS / VIDEOS
   }
 
 } 
-function hideDescDesc(elementId) {            // DESCRIPCION / DESCRIPCION
+function hideDescDesc(elementId) { 
  var contenedoresPadre = document.getElementsByClassName('descripcion');
  for (var i = 0; i < contenedoresPadre.length; i++) {
  contenedoresPadre[i].style.display = 'none';
@@ -206,8 +212,6 @@ function hideDescDesc(elementId) {            // DESCRIPCION / DESCRIPCION
     idsArray.push(elementId);
   }
 }
-
-
 function hideInicBotonera(elementID) {
   solicitarPantallaCompleta()  
  // INICIALES / BOTONERA
@@ -223,6 +227,7 @@ function hideInicBotonera(elementID) {
 
  // Agregar el ID al array
  idsArray.push(elementID);
+ console.log(idsArray)
 
  // Obtener todas las imágenes dentro del contenedor
  var imagenes = contenedor.getElementsByTagName("img");
@@ -327,91 +332,112 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let pausedAudios = []; // Arreglo para almacenar los elementos de audio en pausa
 
+const videoFlags = new Map(); // key: videoId, value: boolean
 
+// helper: entrar fullscreen garantizado (devuelve Promise que siempre resuelve)
+function entrarFullscreen(elem) {
+  if (elem.requestFullscreen) elem.requestFullscreen();
+  else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+  else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
+  else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
 
-function toggleFullscreenAndPlay(videoId) {
-  // Pausar audios activos
-  const audioElements = document.getElementsByTagName('audio');
-  for (const audio of audioElements) {
-    if (!audio.paused && !pausedAudios.includes(audio)) {
-      audio.pause();
-      pausedAudios.push(audio);
-    }
-  }
+  // aplica control visual tras 100 ms
+  setTimeout(() => {
+    elem.style.objectFit = 'contain';
+    elem.style.width = '100vw';
+    elem.style.height = '100vh';
+    elem.style.backgroundColor = 'black';
+  }, 100);
+}
 
-  const video = document.getElementById(videoId);
+function salirFullscreen() {
+  if (document.exitFullscreen) document.exitFullscreen();
+  else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+  else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+  else if (document.msExitFullscreen) document.msExitFullscreen();
+
+  // restaura estilo
+  document.querySelectorAll('video').forEach(v => {
+    v.style.width = '';
+    v.style.height = '';
+    v.style.objectFit = '';
+    v.style.backgroundColor = '';
+  });
+}
+
+function pauseOtherAudios() {
+  document.querySelectorAll('audio').forEach(a => { if (!a.paused) a.pause(); });
+}
+
+async function handleVideoToggle(video) {
   if (!video) return;
+  const id = video.id || video.dataset.vkey || video; // permite pasar id o elemento
+  const flag = videoFlags.get(id) || false;
 
-  // Si el video está en pausa → reproducir y entrar en fullscreen
-  if (video.paused) {
-    video.play();
-    entrarFullscreen(video);
-  } else {
-    salirFullscreen(video);
-  }
-}
-
-function entrarFullscreen(video) {
-  const fs = video.requestFullscreen || video.webkitRequestFullscreen || video.mozRequestFullScreen || video.msRequestFullscreen;
-  if (fs) {
-    fs.call(video).then(() => aplicarEstilosFullscreen(video));
-  } else {
-    aplicarEstilosFullscreen(video);
-  }
-}
-
-function aplicarEstilosFullscreen(video) {
-  video.style.width = '100vw';
-  video.style.height = '100vh';
-  video.style.objectFit = 'contain';
-  video.style.backgroundColor = 'black';
-}
-
-function salirFullscreen(video) {
-  const exitFs = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen;
-  const restore = () => {
-    // Reanudar audios pausados
-    for (const audio of pausedAudios) audio.play();
-    pausedAudios = [];
-
-    // Pausar y reiniciar el video
+  // Segundo click: si flag true => pausar y salir fullscreen
+  if (flag) {
     video.pause();
-    video.currentTime = 0;
+    // opcional: restaurar audio si lo habías silenciado
+    video.muted = false;
+    await salirFullscreen();
+    videoFlags.set(id, false);
+    return;
+  }
 
-    // Restaurar estilos originales
-    video.style.width = '';
-    video.style.height = '';
-    video.style.objectFit = '';
-    video.style.backgroundColor = '';
+  // Primer click: marcar flag true y ejecutar secuencia segura
+  videoFlags.set(id, true);
+
+  pauseOtherAudios();
+
+  // Intento 1: reproducir dentro del gesto
+  try {
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.then === 'function') {
+      await playPromise; // si funciona, continuamos
+      // damos tiempo breve antes de fullscreen para estabilizar
+      await new Promise(r => setTimeout(r, 120));
+      await entrarFullscreen(video);
+      return;
+    }
+  } catch (err) {
+    console.warn('play() lanzó error inicial:', err);
+  }
+
+  // Si llegamos aquí, play fue bloqueado o no devolvió promesa. Usamos fallback:
+  try {
+    await entrarFullscreen(video);
+  } catch (e) {
+    console.warn('Fallback entrarFullscreen falló:', e);
+  }
+
+  // Tras entrar a fullscreen intentar play silenciado
+  try {
+    video.muted = true;
+    const retry = video.play();
+    if (retry && typeof retry.then === 'function') {
+      await retry;
+    }
+  } catch (e) {
+    console.warn('Reintento play en fullscreen falló:', e);
+  }
+}
+
+// Asignación de listener a todos los videos (click y touch)
+document.querySelectorAll('video').forEach(v => {
+  // inicializa flag en false para cada video
+  const key = v.id || v.dataset.vkey || v;
+  videoFlags.set(key, false);
+
+  const handler = event => {
+    // prevenir doble disparo en touch+click si necesario
+    event.preventDefault && event.preventDefault();
+    handleVideoToggle(v);
   };
 
-  if (exitFs) {
-    exitFs.call(document).then(restore);
-  } else {
-    restore();
-  }
-}
+  v.addEventListener('click', handler);
+  v.addEventListener('touchend', handler, { passive: false });
+});
 
-
-// Recorre todos los elementos de video presentes en la página
-const videoElements = document.getElementsByTagName('video');
-for (let i = 0; i < videoElements.length; i++) {
- // Agrega un evento de escucha ('touchend') a cada video
- videoElements[i].addEventListener('touchend', function (event) {
-   // Comprueba si el video actual está en modo de pantalla completa
-   if (
-     (document.fullscreenElement && document.fullscreenElement === this) || // Comprobación para navegadores estándar
-     (document.webkitFullscreenElement && document.webkitFullscreenElement === this) || // Comprobación para navegadores WebKit (como Safari y Chrome)
-     (document.mozFullScreenElement && document.mozFullScreenElement === this) || // Comprobación para navegadores Firefox (anterior a versión 64)
-     (document.msFullscreenElement && document.msFullscreenElement === this) // Comprobación para navegadores Microsoft Edge
-   ) {
-     // Previene el comportamiento predeterminado del evento touchend
-     event.preventDefault();
-     // Llama a la función toggleFullscreenAndPlay, pasando como argumento el ID del video actual
-     toggleFullscreenAndPlay(this.id);    
-   }
- });
-}
 
 
 function ajustarTamañoImagen(idPadre, ancho, alto) {
@@ -430,7 +456,6 @@ function ajustarTamañoImagen(idPadre, ancho, alto) {
   imagen.style.objectFit = 'fill'; // fuerza adaptación exacta
   imagen.style.objectPosition = 'center';
 }
-
 function solicitarPantallaCompleta() {
   const docEl = document.documentElement;
   if (docEl.requestFullscreen) {

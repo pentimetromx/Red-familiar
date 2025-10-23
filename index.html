@@ -63,7 +63,7 @@
             </div>
 
             <div class="contBotBotonera">
-              <button type="button" id="mi-botonB" class="botonBotonera" onclick="vuelveaInicio()">Ir a Inicio</button> 
+              <button type="button" id="mi-botonB" onclick="vuelveaInicio()">Ir a Inicio</button> 
             </div>            
         </div>
 
@@ -968,7 +968,7 @@
         <!---<<<<<<<<<<<<<<<<<<<<<<<<<<video onclick="toggleFullscreenAndPlay('video')"S<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
 
 
-        <div id="video-mama" class="video-v" style="display: none;">                    
+        <div id="video-mama" class="imagenes-i" style="display: none;">                    
 
             <div id="boton-olga-v" class="button-containerVid">       
                 <button id="botVidMama" data-target="video-mama" class="btn" onclick="hideVidImagen('imagenes-mama')">Ver Las Fotos de Olga Aqui</button>              
@@ -976,474 +976,428 @@
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-mama')" >Atras</button> 
             </div> 
 
-            <div class="contVideosWrapper">  
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video0')" id="video0" src="./assets/mamá tango .mp4"></video>  
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video1')" id="video1" src="./assets/video1.mp4"></video>  
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video2')" id="video2" src="./assets/video2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video3')" id="video3" src="./assets/video3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video4')" id="video4" src="./assets/ma y tina.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video5')" id="video5" src="./assets/reunion macario hijas2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video6')" id="video6" src="./assets/reunion macario hijas3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video02')" id="video02" src="./assets/almuerzolastres.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video01')" id="video01" src="./assets/empanadas Tias.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video1" src="./assets/mamá tango .mp4"></video>  
+                </div>
+                <div class="video-container">
+                    <video id="video1" src="./assets/video1.mp4"></video>  
+                </div>
+                <div class="video-container">
+                    <video id="video2" src="./assets/video2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video3" src="./assets/video3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video4" src="./assets/ma y tina.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video5" src="./assets/reunion macario hijas2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video6" src="./assets/reunion macario hijas3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video02" src="./assets/almuerzolastres.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video01" src="./assets/empanadas Tias.mp4"></video>
                 </div>
             </div>
 
         </div>
-
-        <div id="video-nena" class="video-v" style="display: none;">     
+        <div id="video-nena" class="imagenes-i" style="display: none;">     
 
             <div id="boton-nena-v" class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-nena')">Ver Las Fotos de Nena Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>  
                 <button type="button" class="btn" id="botonAtras" onclick="irContenedorAnterior('video-nena')">Atras</button>
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video7')" id="video7" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video8')" id="video8" class="fullscreenButton video-item1" src="./assets/reunion macario hijas2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video9')" id="video9" class="fullscreenButton video-item1" src="./assets/catafiesta.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video10')" id="video10" class="fullscreenButton video-item1" src="./assets/almuerzolastres.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video0100')" id="video0100" class="fullscreenButton video-item1" src="./assets/NENAMUECA.mp4"></video>    
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video7" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video8" class="fullscreenButton video-item1" src="./assets/reunion macario hijas2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video9" class="fullscreenButton video-item1" src="./assets/catafiesta.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video10" class="fullscreenButton video-item1" src="./assets/almuerzolastres.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video0100" class="fullscreenButton video-item1" src="./assets/NENAMUECA.mp4"></video>    
                 </div>
             </div>
-        </div>   
-        
-        <div id="video-tina" class="video-v" style="display: none;">     
+        </div>  
+        <div id="video-tina" class="imagenes-i" style="display: none;">     
 
             <div id="boton-tina-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-tina')">Ver Las Fotos de Cristina Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="btn" id="botonAtras" onclick="irContenedorAnterior('video-tina')" >Atras</button>
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">  
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video13')" id="video13" class="fullscreenButton video-item13" src="./assets/ma y tina.mp4"></video> 
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video14')" id="video14" class="fullscreenButton video-item14" src="./assets/tinavid.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video15')" id="video15" class="fullscreenButton video-item15" src="./assets/reunion macario hijas.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video16')" id="video16" class="fullscreenButton video-item16" src="./assets/reunion macario hijas2.mp4"></video>
-                    </div>
-                    <div class="video-container"> 
-                        <video onclick="toggleFullscreenAndPlay('video17')" id="video17" class="fullscreenButton video-item17" src="./assets/reunion macario hijas3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video06')" id="video06" class="fullscreenButton video-item06" src="./assets/almuerzolastres.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video18')" id="video18" class="fullscreenButton video-item18" src="./assets/empanadas Tias.mp4"></video>
-                    </div>
+            <div class="contVideos">  
+                <div class="video-container">
+                    <video id="video13" class="fullscreenButton video-item13" src="./assets/ma y tina.mp4"></video> 
+                </div>
+                <div class="video-container">
+                    <video id="video14" class="fullscreenButton video-item14" src="./assets/tinavid.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video15" class="fullscreenButton video-item15" src="./assets/reunion macario hijas.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video16" class="fullscreenButton video-item16" src="./assets/reunion macario hijas2.mp4"></video>
+                </div>
+                <div class="video-container"> 
+                    <video id="video17" class="fullscreenButton video-item17" src="./assets/reunion macario hijas3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video06" class="fullscreenButton video-item06" src="./assets/almuerzolastres.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video18" class="fullscreenButton video-item18" src="./assets/empanadas Tias.mp4"></video>
                 </div>
             </div>
         </div>
-
-        <div id="video-daniela" class="video-v" style="display: none;">    
+        <div id="video-daniela" class="imagenes-i" style="display: none;">    
             <div id="boton-daniela-v" class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-daniela')">Ver Las Fotos de Daniela Aqui</button>        
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-daniela')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video19')" id="video19" class="fullscreenButton video-item19" src="./assets/reunion macario hijas.mp4"></video>
-                    </div>
-                    </div>
-                </div>
-            </div>            
-        </div> 
-
-        <div id="video-sara" class="video-v" style="display: none;">
+            <div class="contVideos">
+            <div class="video-container">
+            <video id="video19" class="fullscreenButton video-item19" src="./assets/reunion macario hijas.mp4"></video>
+            </div>
+            </div>
+        </div>            
+        <div id="video-sara" class="imagenes-i" style="display: none;">
             <div id="boton-sara-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-sara')">Ver Las Fotos de Sara Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-sara')" >Atras</button> 
   
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video25')" id="video25" class="fullscreenButton video-item1" src="./assets/reunion macario hijas.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video26')" id="video26" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video27')" id="video27" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video028')" id="video028" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
-                    </div>
-
-
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video25" class="fullscreenButton video-item1" src="./assets/reunion macario hijas.mp4"></video>
                 </div>
-            </div>            
-        </div>   
+                <div class="video-container">
+                    <video id="video26" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video27" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video028" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
+                </div>
 
-        <div id="video-juli" class="video-v" style="display: none;">     
+
+            </div>
+        </div>   
+        <div id="video-juli" class="imagenes-i" style="display: none;">     
             <div id="boton-juli-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-juli')">Ver Las Fotos de Juliana Aqui</button>  
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-juli')" >Atras</button> 
             </div>           
-            <div class="contVideosWrapper">    
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video31')" id="video31" class="fullscreenButton video-item1" src="./assets/julianita.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video32')" id="video32" class="fullscreenButton video-item1" src="./assets/julianita1.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video33')" id="video33" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video34')" id="video34" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video31" class="fullscreenButton video-item1" src="./assets/julianita.mp4"></video>
                 </div>
-            </div>        
-
+                <div class="video-container">
+                    <video id="video32" class="fullscreenButton video-item1" src="./assets/julianita1.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video33" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video34" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
+                </div>
+            </div>
         </div>
-
-        <div id="video-maca" class="video-v" style="display: none;">
+        <div id="video-maca" class="imagenes-i" style="display: none;">
             <div id="boton-maca-v" class="button-containerVid">   
                 <button class="btn" onclick="hideVidImagen('imagenes-maca')">Ver Las Fotos de Macario Aqui</button> 
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-maca')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video43')" id="video43" class="fullscreenButton video-item1" src="./assets/video2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video44')" id="video44" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video45')" id="video45" class="fullscreenButton video-item1" src="./assets/reunion macario hijas.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video46')" id="video46" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video47')" id="video47" class="fullscreenButton video-item1" src="./assets/reunion macario hijas2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video48')" id="video48" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video43" class="fullscreenButton video-item1" src="./assets/video2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video44" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video45" class="fullscreenButton video-item1" src="./assets/reunion macario hijas.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video46" class="fullscreenButton video-item1" src="./assets/reunion macario hijas1.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video47" class="fullscreenButton video-item1" src="./assets/reunion macario hijas2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video48" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
                 </div>
             </div>
         </div> 
 
-        <div id="video-isabel" class="video-v" style="display: none;">
+        <div id="video-isabel" class="imagenes-i" style="display: none;">
+
             <div id="boton-isabel-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-isabel')">Ver Las Fotos de Maria isabel Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-isabel')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video49')" id="video49" class="fullscreenButton video-item1" src="./assets/maria isabel.mp4"></video>
-                    </div>
+
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video49" class="fullscreenButton video-item1" src="./assets/maria isabel.mp4"></video>
                 </div>
             </div>
+
         </div>
 
-        <div id="video-sebas" class="video-v" style="display: none;"> 
+        <div id="video-sebas" class="imagenes-i" style="display: none;"> 
             <div id="boton-sebas-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-sebas')">Ver Las Fotos de Sebastian Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-sebas')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video55')" id="video55" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video55" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
                 </div>
             </div>
         </div>
-
-        <div id="video-ney" class="video-v" style="display: none;" >
+        <div id="video-ney" class="imagenes-i" style="display: none;" >
 
             <div id="boton-ney-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-ney')">Ver Las Fotos de Fredy Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-ney')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                    </div>
-                    <div class="video-container">
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                </div>
+                <div class="video-container">
                 </div>
             </div>
         </div> 
-
-        <div id="video-many" class="video-v" style="display: none;">  
+        <div id="video-many" class="imagenes-i" style="display: none;">  
 
             <div id="boton-many-v" class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-many')">Ver Las Fotos de Ana Maria Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-many')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video67')" id="video67" class="fullscreenButton video-item1" src="./assets/ana canta.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video69')" id="video69" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video68')" id="video68" class="fullscreenButton video-item1" src="./assets/ana julian cantan.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video70')" id="video70" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                    </div>
-                    <div class="video-container">
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video67" class="fullscreenButton video-item1" src="./assets/ana canta.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video69" class="fullscreenButton video-item1" src="./assets/en casa maritza.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video68" class="fullscreenButton video-item1" src="./assets/ana julian cantan.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video70" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
+                </div>
+                <div class="video-container">
+                </div>
+                <div class="video-container">
                 </div>
             </div>
 
         </div>
-        <div id="video-bomba" class="video-v" style="display: none;">
+        <div id="video-bomba" class="imagenes-i" style="display: none;">
             <div id="boton-bomba-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-bomba')">Ver Las Fotos de Olga Elena Aqui</button>        
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-bomba')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video74')" id="video74" class="fullscreenButton video-item1" src="./assets/bomba y yo-II.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video73')" id="video73" class="fullscreenButton video-item1" src="./assets/bomba y yo.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video74" class="fullscreenButton video-item1" src="./assets/bomba y yo-II.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video73" class="fullscreenButton video-item1" src="./assets/bomba y yo.mp4"></video>
                 </div>
             </div>
 
         </div> 
-        <div id="video-moni" class="video-v" style="display: none;" >                 
+        <div id="video-moni" class="imagenes-i" style="display: none;" >                 
             <div id="boton-moni-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-moni')">Ver Las Fotos de Moni Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-moni')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video79')" id="video79" class="fullscreenButton video-item1" src="./assets/moni billar.mp4"></video>    
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video80')" id="video80" class="fullscreenButton video-item1" src="./assets/monica decora.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video81')" id="video81" class="fullscreenButton video-item1" src="./assets/moniemiVid.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video83')" id="video83" class="fullscreenButton video-item1" src="./assets/almuerzolastres.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video083')" id="video083" class="fullscreenButton video-item1" src="./assets/perro indigente.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video84')" id="video84" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video82')" id="video82" class="fullscreenButton video-item1" src="./assets/moni jnona.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video79" class="fullscreenButton video-item1" src="./assets/moni billar.mp4"></video>    
+                </div>
+                <div class="video-container">
+                    <video id="video80" class="fullscreenButton video-item1" src="./assets/monica decora.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video81" class="fullscreenButton video-item1" src="./assets/moniemiVid.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video83" class="fullscreenButton video-item1" src="./assets/almuerzolastres.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video083" class="fullscreenButton video-item1" src="./assets/perro indigente.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video84" class="fullscreenButton video-item1" src="./assets/reunion mama.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video82" class="fullscreenButton video-item1" src="./assets/moni jnona.mp4"></video>
                 </div>
             </div>
         </div> 
-
-        <div id="video-orle" class="video-v" style="display: none;" >                 
+        <div id="video-orle" class="imagenes-i" style="display: none;" >                 
             <div id="boton-orle-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-orle')">Ver Las Fotos de Orleancy Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="btn" onclick="irContenedorAnterior('video-orle')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
+            <div class="contVideos">
             </div>
         </div>
-
-        <div id="video-chava" class="video-v" style="display: none;" >                 
+        <div id="video-chava" class="imagenes-i" style="display: none;" >                 
             <div id="boton-chava-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-chava')">Ver Las Fotos de Isabel Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="btn" onclick="irContenedorAnterior('video-chava')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
+            <div class="contVideos">
             </div>
             </div>
         </div>         
 
-
-        <div id="video-magdalena" class="video-v" style="display: none;" >                 
+        <div id="video-magdalena" class="imagenes-i" style="display: none;" >                 
             <div id="boton-magdalena-v" class="button-containerVid">  
                 <button class="btn" onclick="hideVidImagen('imagenes-magdalena')">Ver Las Fotos de Magdalena Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-magdalena')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
-
+            <div class="contVideos">
             </div>
         </div> 
-
-        <div id="video-cata" class="video-v" style="display: none;">
+        <div id="video-cata" class="imagenes-i" style="display: none;">
             <div id="boton-cata-v" class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-cata')">Ver Las Fotos de Cata Aqui</button>    
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-cata')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video85')" id="video85" class="fullscreenButton video-item1" src="./assets/catafiesta.mp4"></video>
-                    </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video85" class="fullscreenButton video-item1" src="./assets/catafiesta.mp4"></video>
                 </div>
             </div>
         </div>
-        <div id="video-dani" class="video-v" style="display: none;">
+        <div id="video-dani" class="imagenes-i" style="display: none;">
             <div id="boton-dani-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-dani')">Ver Las Fotos de Daniel Aqui</button>  
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-dani')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video91')" id="video91" class="fullscreenButton video-item1" src="./assets/hijo moto.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video92')" id="video92" class="fullscreenButton video-item1" src="./assets/tesla.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video93')" id="video93" class="fullscreenButton video-item1" src="./assets/Hijo Caminos de la vida.mp4"></video>
-                    </div>                    
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video91" class="fullscreenButton video-item1" src="./assets/hijo moto.mp4"></video>
                 </div>
+                <div class="video-container">
+                    <video id="video92" class="fullscreenButton video-item1" src="./assets/tesla.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video93" class="fullscreenButton video-item1" src="./assets/Hijo Caminos de la vida.mp4"></video>
+                </div>                    
             </div>
         </div>
-        <div id="video-juan" class="video-v" style="display: none;">
+        <div id="video-juan" class="imagenes-i" style="display: none;">
             <div id="boton-juan-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-juan')">Ver Las Fotos de Juan Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-juan')" >Atras</button>  
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video0101')" id="video0101" class="fullscreenButton video-item1" src="./assets/serpiente.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video101')" id="video101" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
-                    </div>                    
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video103')" id="video103" class="fullscreenButton video-item1" src="./assets/bomba y yo-II.mp4"></video>
-                    </div>  
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video98')" id="video98" class="fullscreenButton video-item1" src="./assets/video1.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video99')" id="video99" class="fullscreenButton video-item1" src="./assets/video3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video100')" id="video100" class="fullscreenButton video-item1" src="./assets/video2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video102')" id="video102" class="fullscreenButton video-item1" src="./assets/yopcalla.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video97')" id="video97" class="fullscreenButton video-item1" src="./assets/bomba y yo.mp4"></video>
-                    </div>
-                </div>       
-            </div>
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video0101" class="fullscreenButton video-item1" src="./assets/serpiente.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video101" class="fullscreenButton video-item1" src="./assets/reunion macario hijas3.mp4"></video>
+                </div>                    
+                <div class="video-container">
+                    <video id="video103" class="fullscreenButton video-item1" src="./assets/bomba y yo-II.mp4"></video>
+                </div>  
+                <div class="video-container">
+                    <video id="video98" class="fullscreenButton video-item1" src="./assets/video1.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video99" class="fullscreenButton video-item1" src="./assets/video3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video100" class="fullscreenButton video-item1" src="./assets/video2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video102" class="fullscreenButton video-item1" src="./assets/yopcalla.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video97" class="fullscreenButton video-item1" src="./assets/bomba y yo.mp4"></video>
+                </div>
+            </div>       
         </div>
-        <div id="video-mario" class="video-v" style="display: none;">   
+        <div id="video-mario" class="imagenes-i" style="display: none;">   
             <div id="boton-mario-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-mario')">Ver Las Fotos de Mario Aqui</button>    
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-mario')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video1030')" id="video1030" class="fullscreenButton video-item1" src="./assets/mariovid.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video104')" id="video104" class="fullscreenButton video-item1" src="./assets/mariovid1.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video105')" id="video105" class="fullscreenButton video-item1" src="./assets/mariovid2.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video106')" id="video106" class="fullscreenButton video-item1" src="./assets/mariovid3.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video107')" id="video107" class="fullscreenButton video-item1" src="./assets/mariovid4.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video108')" id="video108" class="fullscreenButton video-item1" src="./assets/mariovid5.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video109')" id="video109" class="fullscreenButton video-item1" src="./assets/mariovid6.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video110')" id="video110" class="fullscreenButton video-item1" src="./assets/mariovid7.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video111')" id="video111" class="fullscreenButton video-item1" src="./assets/mariovid8.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video112')" id="video112" class="fullscreenButton video-item1" src="./assets/mariovid9.mp4"></video>
-                    </div>
-                    <div class="video-container">
-                        <video onclick="toggleFullscreenAndPlay('video0112')" id="video0112" class="fullscreenButton video-item1" src="./assets/tinaBaila.mp4"></video>
-                    </div>    
+            <div class="contVideos">
+                <div class="video-container">
+                    <video id="video1030" class="fullscreenButton video-item1" src="./assets/mariovid.mp4"></video>
                 </div>
+                <div class="video-container">
+                    <video id="video104" class="fullscreenButton video-item1" src="./assets/mariovid1.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video105" class="fullscreenButton video-item1" src="./assets/mariovid2.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video106" class="fullscreenButton video-item1" src="./assets/mariovid3.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video107" class="fullscreenButton video-item1" src="./assets/mariovid4.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video108" class="fullscreenButton video-item1" src="./assets/mariovid5.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video109" class="fullscreenButton video-item1" src="./assets/mariovid6.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video110" class="fullscreenButton video-item1" src="./assets/mariovid7.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video111" class="fullscreenButton video-item1" src="./assets/mariovid8.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video112" class="fullscreenButton video-item1" src="./assets/mariovid9.mp4"></video>
+                </div>
+                <div class="video-container">
+                    <video id="video0112" class="fullscreenButton video-item1" src="./assets/tinaBaila.mp4"></video>
+                </div>    
             </div>
         </div> 
-        <div id="video-fer" class="video-v" style="display: none;">
+        <div id="video-fer" class="imagenes-i" style="display: none;">
             <div id="boton-fer-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-fer')">Ver Las Fotos de Juan Aqui</button> 
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
@@ -1451,59 +1405,55 @@
             </div>
 
         </div>  
-        <div id="video-maritza" class="video-v" style="display: none;">    
+        <div id="video-maritza" class="imagenes-i" style="display: none;">    
             <div id="boton-maritza-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-maritza')">Ver Las Fotos de Maritza Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-naritza')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
+            <div class="contVideos">
             </div>
         </div>     
-        <div id="video-andres" class="video-v" style="display: none;">
+        <div id="video-andres" class="imagenes-i" style="display: none;">
             <div id="boton-andres-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-andres')">Ver Las Fotos de Andrés Aqui</button>    
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-andres')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
+            <div class="contVideos">
             </div>
         </div>  
-        <div id="video-manola" class="video-v" style="display: none;">
+        <div id="video-manola" class="imagenes-i" style="display: none;">
             <div id="boton-manola-v" class="button-containerVid"> 
                 <button class="btn" onclick="hideVidImagen('imagenes-manola')">Ver Las Fotos de Manola Aqui</button>     
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>  
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-manola')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper"> 
+            <div class="contVideos">
             </div>
         </div>             
-        <div id="video-silvi" class="video-v" style="display: none;">  
+        <div id="video-silvi" class="imagenes-i" style="display: none;">  
             <div id="boton-silvi-v" class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-silvi')">Ver Las Fotos de Silvia Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-silvi')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">    
-                    </div>
-                </div>  
-            </div>
+            <div class="contVideos">
+                <div class="video-container">    
+                </div>
+            </div>  
         </div>
-        <div id="videos-abuelos" class="video-v" style="display: none;">  
+        <div id="videos-abuelos" class="imagenes-i" style="display: none;">  
             <div class="button-containerVid">
                 <button class="btn" onclick="hideVidImagen('imagenes-abuelos')">Ver Las Fotos de Abuelos Aqui</button>
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="botonBotonera" onclick="irContenedorAnterior('video-silvi')" >Atras</button> 
             </div> 
-            <div class="contVideosWrapper">
-                <div class="contVideos">
-                    <div class="video-container">   
-                        <video onclick="toggleFullscreenAndPlay('videoAbuelos')" id="videoAbuelos" class="fullscreenButton video-item1" src="./assets/Medellin antiguo/Medellin antiguo.mp4"></video>
-                    </div>
-                </div>  
-            </div>
+            <div class="contVideos">
+                <div class="video-container">   
+                    <video id="videoAbuelos" class="fullscreenButton video-item1" src="./assets/Medellin antiguo/Medellin antiguo.mp4"></video>
+                </div>
+            </div>  
         </div>
 
 
@@ -1513,856 +1463,808 @@
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="botonBotonera" onclick="irContenedorAnterior('imagenes-mama')">Atras</button> 
             </div>
-            <div class="contVideosWrapper">  
-                <div class="contenedor-secundario">               
-                    <img class="imagen-fullscreen" src="./assets/abuelos.png">       
-                </div>
-            </div>
+
+            <div class="contenedor-secundario">               
+                <img class="imagen-fullscreen" src="./assets/abuelos.png">       
+            </div> 
         </div>
-                
-
-
-        <div id="imagenes-mama" class="imagenes-i" style="display: none;"> 
+        <div id="imagenes-mama" class="imagenes-i" style="display: none;">  
 
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-mama')">Videos de Olga</button>               
+                <button class="btn" onclick="hideDescripVideos('video-mama')">Videos de Olga</button>               
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button> 
                 <button class="botonBotonera"onclick="irContenedorAnterior('imagenes-mama')" >Atras</button> 
             </div>
 
-            <div class="contVideosWrapper">  
-                <div class="contenedor-secundario">               
-                    <img class="imagen-fullscreen" src="./assets/mama.jpg">
-                    <img class="imagen-fullscreen" src="./assets/mamá Mario .jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/las Pinedas .png">    
-                    <img class="imagen-fullscreen" src="./assets/mama24.jpg" alt="Imagen 2">  
-                    <img class="imagen-fullscreen" src="./assets/mama1.jpg" alt="Imagen 3">
-                    <img class="imagen-fullscreen" src="./assets/mama2.jpg" alt="Imagen 4"> 
-                    <img class="imagen-fullscreen" src="./assets/mama3.jpg" alt="Imagen 5">
-                    <img class="imagen-fullscreen" src="./assets/mama4.jpg" alt="Imagen 6"> 
-                    <img class="imagen-fullscreen" src="./assets/mama5.jpg" alt="Imagen 7">
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" alt="Imagen 7"> 
-                    <img class="imagen-fullscreen" src="./assets/mama6.jpg" alt="Imagen 8">
-                    <img class="imagen-fullscreen" src="./assets/mama7.jpg" alt="Imagen 9">
-                    <img class="imagen-fullscreen" src="./assets/mama18.jpg" alt="Imagen 10"> 
-                    <img class="imagen-fullscreen" src="./assets/mama1.jpg" alt="Imagen 10"> 
-                    <img class="imagen-fullscreen" src="./assets/mama9.jpg" alt="Imagen 11">
-                    <img class="imagen-fullscreen" src="./assets/mama10.jpg" alt="Imagen 12"> 
-                    <img class="imagen-fullscreen" src="./assets/mama11.jpg" alt="Imagen 13">
-                    <img class="imagen-fullscreen" src="./assets/mama12.jpg" alt="Imagen 14"> 
-                    <img class="imagen-fullscreen" src="./assets/mama13.jpg" alt="Imagen 15">
-                    <img class="imagen-fullscreen" src="./assets/mama14.jpg" alt="Imagen 16">   
-                    <img class="imagen-fullscreen" src="./assets/mama15.jpg" alt="Imagen 17">
-                    <img class="imagen-fullscreen" src="./assets/mama16.jpg" alt="Imagen 18">
-                    <img class="imagen-fullscreen" src="./assets/mama17.jpg" alt="Imagen 19"> 
-                    <img class="imagen-fullscreen" src="./assets/mama18.jpg" alt="Imagen 20">
-                    <img class="imagen-fullscreen" src="./assets/mama19.jpg" alt="Imagen 21"> 
-                    <img class="imagen-fullscreen" src="./assets/mama20.jpg" alt="Imagen 22">
-                    <img class="imagen-fullscreen" src="./assets/mama21.jpg" alt="Imagen 23">
-                    <img class="imagen-fullscreen" src="./assets/mama22.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama23.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama25.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama26.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama27.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama28.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama29.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama30.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama31.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama32.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama34.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama35.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama36.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama37.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama38.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama39.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama40.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama41.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama42.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama43.jpg" alt="Imagen 24"> 
-                    <img class="imagen-fullscreen" src="./assets/mama.png" >
-                    <img class="imagen-fullscreen" src="./assets/las tres2.png" >
-                    <img class="imagen-fullscreen" src="./assets/las tres.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/las tres1.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >           
-    
-                </div> 
-            </div>      
-        </div>
+            <div class="contenedor-secundario">               
+                <img class="imagen-fullscreen" src="./assets/mama.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/mamá Mario .jpg"> 
+                <img class="imagen-fullscreen" src="./assets/las Pinedas .png">    
+                <img class="imagen-fullscreen" src="./assets/mama24.jpg" alt="Imagen 2">  
+                <img class="imagen-fullscreen" src="./assets/mama1.jpg" alt="Imagen 3">
+                <img class="imagen-fullscreen" src="./assets/mama2.jpg" alt="Imagen 4"> 
+                <img class="imagen-fullscreen" src="./assets/mama3.jpg" alt="Imagen 5">
+                <img class="imagen-fullscreen" src="./assets/mama4.jpg" alt="Imagen 6"> 
+                <img class="imagen-fullscreen" src="./assets/mama5.jpg" alt="Imagen 7">
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" alt="Imagen 7"> 
+                <img class="imagen-fullscreen" src="./assets/mama6.jpg" alt="Imagen 8">
+                <img class="imagen-fullscreen" src="./assets/mama7.jpg" alt="Imagen 9">
+                <img class="imagen-fullscreen" src="./assets/mama18.jpg" alt="Imagen 10"> 
+                <img class="imagen-fullscreen" src="./assets/mama1.jpg" alt="Imagen 10"> 
+                <img class="imagen-fullscreen" src="./assets/mama9.jpg" alt="Imagen 11">
+                <img class="imagen-fullscreen" src="./assets/mama10.jpg" alt="Imagen 12"> 
+                <img class="imagen-fullscreen" src="./assets/mama11.jpg" alt="Imagen 13">
+                <img class="imagen-fullscreen" src="./assets/mama12.jpg" alt="Imagen 14"> 
+                <img class="imagen-fullscreen" src="./assets/mama13.jpg" alt="Imagen 15">
+                <img class="imagen-fullscreen" src="./assets/mama14.jpg" alt="Imagen 16">   
+                <img class="imagen-fullscreen" src="./assets/mama15.jpg" alt="Imagen 17">
+                <img class="imagen-fullscreen" src="./assets/mama16.jpg" alt="Imagen 18">
+                <img class="imagen-fullscreen" src="./assets/mama17.jpg" alt="Imagen 19"> 
+                <img class="imagen-fullscreen" src="./assets/mama18.jpg" alt="Imagen 20">
+                <img class="imagen-fullscreen" src="./assets/mama19.jpg" alt="Imagen 21"> 
+                <img class="imagen-fullscreen" src="./assets/mama20.jpg" alt="Imagen 22">
+                <img class="imagen-fullscreen" src="./assets/mama21.jpg" alt="Imagen 23">
+                <img class="imagen-fullscreen" src="./assets/mama22.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama23.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama25.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama26.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama27.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama28.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama29.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama30.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama31.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama32.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama34.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama35.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama36.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama37.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama38.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama39.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama40.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama41.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama42.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama43.jpg" alt="Imagen 24"> 
+                <img class="imagen-fullscreen" src="./assets/mama.png" >
+                <img class="imagen-fullscreen" src="./assets/las tres2.png" >
+                <img class="imagen-fullscreen" src="./assets/las tres.jpg" >
+                <img class="imagen-fullscreen" src="./assets/las tres1.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >           
 
+            </div> 
+
+        </div>
         <div id="imagenes-tina" class="imagenes-i" style="display: none;">  
             <div class="button-containerVid">  
-                <button class="btn" onclick="hideImagVideo('video-tina')">Videos de Cristina</button>               
+                <button class="btn" onclick="hideDescripVideos('video-tina')">Videos de Cristina</button>               
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('imagenes-tina')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
 
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/las Pinedas .png">
-                    <img class="imagen-fullscreen" src="./assets/tina y nena.jpg">
-                    <img class="imagen-fullscreen" src="./assets/tina.jpg">
-                    <img class="imagen-fullscreen" src="./assets/tina1.jpg">
-                    <img class="imagen-fullscreen" src="./assets/las tres2.png">
-                    <img class="imagen-fullscreen" src="./assets/tina juan mar.jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/andres-tina.png">
-                    <img class="imagen-fullscreen" src="./assets/tina-fer.png">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/las Pinedas .png">
+                <img class="imagen-fullscreen" src="./assets/tina y nena.jpg">
+                <img class="imagen-fullscreen" src="./assets/tina.jpg">
+                <img class="imagen-fullscreen" src="./assets/tina1.jpg">
+                <img class="imagen-fullscreen" src="./assets/las tres2.png">
+                <img class="imagen-fullscreen" src="./assets/tina juan mar.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/andres-tina.png">
+                <img class="imagen-fullscreen" src="./assets/tina-fer.png">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
 
-                </div>
-            </div>    
+            </div>
         </div>
         <div id="imagenes-nena" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-nena')">Videos de Nena</button>              
+                <button class="btn" onclick="hideDescripVideos('video-nena')">Videos de Nena</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('imagenes-nena')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/las Pinedas .png">
-                    <img class="imagen-fullscreen" src="./assets/nenan.jpeg">
-                    <img class="imagen-fullscreen" src="./assets/las tres.jpg">
-                    <img class="imagen-fullscreen" src="./assets/las tres1.jpg">
-                    <img class="imagen-fullscreen" src="./assets/las tres2.png">
-                    <img class="imagen-fullscreen" src="./assets/nena9.png">
-                    <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png"> 
-                    <img class="imagen-fullscreen" src="./assets/nena8.png">
-                    <img class="imagen-fullscreen" src="./assets/nena-rafa.png">
-                    <img class="imagen-fullscreen" src="./assets/nena-rafa1.png">
-                    <img class="imagen-fullscreen" src="./assets/nena-rafa2.png">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/las Pinedas .png">
+                <img class="imagen-fullscreen" src="./assets/nenan.jpeg">
+                <img class="imagen-fullscreen" src="./assets/las tres.jpg">
+                <img class="imagen-fullscreen" src="./assets/las tres1.jpg">
+                <img class="imagen-fullscreen" src="./assets/las tres2.png">
+                <img class="imagen-fullscreen" src="./assets/nena9.png">
+                <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png"> 
+                <img class="imagen-fullscreen" src="./assets/nena8.png">
+                <img class="imagen-fullscreen" src="./assets/nena-rafa.png">
+                <img class="imagen-fullscreen" src="./assets/nena-rafa1.png">
+                <img class="imagen-fullscreen" src="./assets/nena-rafa2.png">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
-
-
         <div id="imagenes-many" class="imagenes-i" style="display: none;"> 
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-many')">Videos de Ana Maria</button>              
+                <button class="btn" onclick="hideDescripVideos('video-many')">Videos de Ana Maria</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-many')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
 
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/many.png" >
-                    <img class="imagen-fullscreen" src="./assets/many1.png" >
-                    <img class="imagen-fullscreen" src="./assets/many2.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many3.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many4.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many6.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/many8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/many9.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many10.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many11.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many12.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/many13.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many14.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/many15.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/many16.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/many17.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many18.jpg" >    
-                    <img class="imagen-fullscreen" src="./assets/many19.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/mama39.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/andress.png" > 
-                    <img class="imagen-fullscreen" src="./assets/many20.png" > 
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" > 
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/many.png" >
+                <img class="imagen-fullscreen" src="./assets/many1.png" >
+                <img class="imagen-fullscreen" src="./assets/many2.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many3.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many4.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many6.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/many8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/many9.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many10.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many11.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many12.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/many13.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many14.jpg" >
+                <img class="imagen-fullscreen" src="./assets/many15.jpg" >
+                <img class="imagen-fullscreen" src="./assets/many16.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/many17.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many18.jpg" >    
+                <img class="imagen-fullscreen" src="./assets/many19.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/mama39.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/andress.png" > 
+                <img class="imagen-fullscreen" src="./assets/many20.png" > 
+                <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" > 
+            </div>
         </div>
-
         <div id="imagenes-bomba" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-bomba')">Videos de Olga Elena</button>              
+                <button class="btn" onclick="hideDescripVideos('video-bomba')">Videos de Olga Elena</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-bomba')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/bomba.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba1.png">
-                    <img class="imagen-fullscreen" src="./assets/bomba2.jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/bomba4.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba3.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba7.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba5.jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/many8.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba8.jpg">  
-                    <img class="imagen-fullscreen" src="./assets/bomba9.jpg">
-                    <img class="imagen-fullscreen" src="./assets/bomba10.png">
-                    <img class="imagen-fullscreen" src="./assets/guatemala.jpg">
-                    <img class="imagen-fullscreen" src="./assets/guatemala3.jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg"> 
-                    <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/bomba.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba1.png">
+                <img class="imagen-fullscreen" src="./assets/bomba2.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/bomba4.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba3.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba7.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba5.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/many8.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba8.jpg">  
+                <img class="imagen-fullscreen" src="./assets/bomba9.jpg">
+                <img class="imagen-fullscreen" src="./assets/bomba10.png">
+                <img class="imagen-fullscreen" src="./assets/guatemala.jpg">
+                <img class="imagen-fullscreen" src="./assets/guatemala3.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg"> 
+                <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
 
         <div id="imagenes-ney" class="imagenes-i" style="display: none;">
             <div class="button-containerVid"> 
-                <button class="btn" onclick="hideImagVideo('video-ney')">Videos de Fredy Hernando</button>              
+                <button class="btn" onclick="hideDescripVideos('video-ney')">Videos de Fredy Hernando</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-ney')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/ney2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/ney3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/ney1.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" >  
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" >  
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/ney2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/ney3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/ney1.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" >  
+                <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" >  
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
 
         <div id="imagenes-silvi" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-silvi')">Videos de Silvia Amparo</button>              
+                <button class="btn" onclick="hideDescripVideos('video-silvi')">Videos de Silvia Amparo</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-silvi')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/Silvi.png" > 
-                    <img class="imagen-fullscreen" src="./assets/silvi.jpeg" >
-                    <img class="imagen-fullscreen" src="./assets/silvia.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/doce.png" >
-                    <img class="imagen-fullscreen" src="./assets/doce1.png" >
-                    <img class="imagen-fullscreen" src="./assets/silvi2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/doce2.png" >
-                    <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/Silvi.png" > 
+                <img class="imagen-fullscreen" src="./assets/silvi.jpeg" >
+                <img class="imagen-fullscreen" src="./assets/silvia.jpg" >
+                <img class="imagen-fullscreen" src="./assets/doce.png" >
+                <img class="imagen-fullscreen" src="./assets/doce1.png" >
+                <img class="imagen-fullscreen" src="./assets/silvi2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/doce2.png" >
+                <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
 
         <div id="imagenes-maca" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">  
-                <button class="btn" onclick="hideImagVideo('video-maca')">Videos de Macario</button>              
+                <button class="btn" onclick="hideDescripVideos('video-maca')">Videos de Macario</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-maca')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/macario1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/macario2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/macario.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/many18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mama39.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/macario1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/macario2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/macario.jpg" >
+                <img class="imagen-fullscreen" src="./assets/many18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mama39.jpg" >
+            </div>
         </div> 
         
         <div id="imagenes-juli" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-juli')">Videos de Juliana</button>              
+                <button class="btn" onclick="hideDescripVideos('video-juli')">Videos de Juliana</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-juli')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/JULI.png" >
-                    <img class="imagen-fullscreen" src="./assets/julianita1.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/julianita2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/toro.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julianita3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julianita daniela.jpg" >       
-                    <img class="imagen-fullscreen" src="./assets/julianita4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos2.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia.png">
-                    <img class="imagen-fullscreen" src="./assets/julia8.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia9.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia10.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia11.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia3.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia4.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia5.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia6.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia7.jpg">
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/JULI.png" >
+                <img class="imagen-fullscreen" src="./assets/julianita1.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/julianita2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/toro.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julianita3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julianita daniela.jpg" >       
+                <img class="imagen-fullscreen" src="./assets/julianita4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos2.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia.png">
+                <img class="imagen-fullscreen" src="./assets/julia8.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia9.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia10.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia11.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia3.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia4.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia5.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia6.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia7.jpg">
+            </div>
         </div>  
+
+
         <div id="imagenes-sara" class="imagenes-i" style="display: none;">    
             <div class="button-containerVid" class="contBotImag" >
-                <button class="btn" onclick="hideImagVideo('video-sara')">Videos de Sara</button>              
+                <button class="btn" onclick="hideDescripVideos('video-sara')">Videos de Sara</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>  
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-sara')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/sara1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/SARA.png" >
-                    <img class="imagen-fullscreen" src="./assets/jacobo.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/jacobo1.jpg" >        
-                    <img class="imagen-fullscreen" src="./assets/jacobo3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/jacobo2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/jacobo4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/jacobo5.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/sara2.jpg" >   
-                    <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">   
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia3.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia4.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia5.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia6.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia7.jpg">  
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/sara1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/SARA.png" >
+                <img class="imagen-fullscreen" src="./assets/jacobo.jpg" >
+                <img class="imagen-fullscreen" src="./assets/jacobo1.jpg" >        
+                <img class="imagen-fullscreen" src="./assets/jacobo3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/jacobo2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/jacobo4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/jacobo5.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/sara2.jpg" >   
+                <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">   
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia3.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia4.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia5.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia6.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia7.jpg">  
+            </div>
         </div> 
         <div id="imagenes-daniela" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-daniela')">Videos de Daniela</button>              
+                <button class="btn" onclick="hideDescripVideos('video-daniela')">Videos de Daniela</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-daniela')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/daniela.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/toro.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julianita daniela.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/andress.png" >
-                    <img class="imagen-fullscreen" src="./assets/daniela-andres.png" >
-                    <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png" >
-                    <img class="imagen-fullscreen" src="./assets/andres-daniela-.png" >
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia3.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia4.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia5.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia6.jpg">   
-                    <img class="imagen-fullscreen" src="./assets/julia7.jpg">  
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/daniela.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/toro.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julianita daniela.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/andress.png" >
+                <img class="imagen-fullscreen" src="./assets/daniela-andres.png" >
+                <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png" >
+                <img class="imagen-fullscreen" src="./assets/andres-daniela-.png" >
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia3.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia4.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia5.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia6.jpg">   
+                <img class="imagen-fullscreen" src="./assets/julia7.jpg">  
+            </div>
         </div>
         <div id="imagenes-moni" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-moni')">Videos de Monica</button>              
+                <button class="btn" onclick="hideDescripVideos('video-moni')">Videos de Monica</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-moni')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/Moni y Yop.png" >
-                    <img class="imagen-fullscreen" src="./assets/moni.png" >
-                    <img class="imagen-fullscreen" src="./assets/moni1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/monica y yo.png">
-                    <img class="imagen-fullscreen" src="./assets/Mónica y Sara .jpg">                    
-                    <img class="imagen-fullscreen" src="./assets/moni6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni9.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/monii.png" >
-                    <img class="imagen-fullscreen" src="./assets/monii1.png" >
-                    <img class="imagen-fullscreen" src="./assets/monii2.png" >
-                    <img class="imagen-fullscreen" src="./assets/monii3.png" > 
-                    <img class="imagen-fullscreen" src="./assets/moni10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni13.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni14.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/moni15.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni16.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni17.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni19.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni20.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni22.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni23.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni24.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni25.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni26.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni27.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni28.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni29.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/moni30.jpg" >  
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/Moni y Yop.png" >
+                <img class="imagen-fullscreen" src="./assets/moni.png" >
+                <img class="imagen-fullscreen" src="./assets/moni1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/monica y yo.png">
+                <img class="imagen-fullscreen" src="./assets/Mónica y Sara .jpg">                    
+                <img class="imagen-fullscreen" src="./assets/moni6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni9.jpg" >
+                <img class="imagen-fullscreen" src="./assets/monii.png" >
+                <img class="imagen-fullscreen" src="./assets/monii1.png" >
+                <img class="imagen-fullscreen" src="./assets/monii2.png" >
+                <img class="imagen-fullscreen" src="./assets/monii3.png" > 
+                <img class="imagen-fullscreen" src="./assets/moni10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni13.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni14.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/moni15.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni16.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni17.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni19.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni20.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni22.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni23.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni24.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni25.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni26.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni27.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni28.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni29.jpg" >
+                <img class="imagen-fullscreen" src="./assets/moni30.jpg" >  
+            </div>
         </div> 
         <div id="imagenes-orle" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-orle')">Videos de Orleancy</button>              
+                <button class="btn" onclick="hideDescripVideos('video-orle')">Videos de Orleancy</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button class="btn" onclick="irContenedorAnterior('video-orle')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+            </div>
         </div>  
         
         
         <div id="imagenes-chava" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-chava')">Videos de Isabel</button>              
+                <button class="btn" onclick="hideDescripVideos('video-chava')">Videos de Isabel</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button class="btn" onclick="irContenedorAnterior('video-chava')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+            </div>
         </div>  
 
         <div id="imagenes-magdalena" class="imagenes-i" style="display: none;"> 
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-magdalena')">Videos de Magdalena</button>              
+                <button class="btn" onclick="hideDescripVideos('video-magdalena')">Videos de Magdalena</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-magdalena')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario" >
-                    <img class="imagen-fullscreen" src="./assets/Magda1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda13.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda9.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda7.png" >
-                    <img class="imagen-fullscreen" src="./assets/Magda11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/reunion muñoces.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/Reunion Muñoz1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Reunion Muñoz2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Reunion Muñoz3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Magda2.jpg" >
-                </div>
-             </div>    
+            <div class="contenedor-secundario" >
+                <img class="imagen-fullscreen" src="./assets/Magda1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda13.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda9.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda7.png" >
+                <img class="imagen-fullscreen" src="./assets/Magda11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/reunion muñoces.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/Reunion Muñoz1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Reunion Muñoz2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Reunion Muñoz3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Magda2.jpg" >
+            </div>
         </div> 
 
         <div id="imagenes-cata" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-cata')">Videos de Cata</button>             
+                <button class="btn" onclick="hideDescripVideos('video-cata')">Videos de Cata</button>             
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-cata')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/silvia.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/silvi.jpeg" >
-                    <img class="imagen-fullscreen" src="./assets/catasilvi.png" >
-                    <img class="imagen-fullscreen" src="./assets/catalina.png" >
-                    <img class="imagen-fullscreen" src="./assets/catali.png" >
-                    <img class="imagen-fullscreen" src="./assets/cat1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat9.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat13.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat14.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat15.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat16.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat17.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat19.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat20.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat21.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat22.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat23.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat24.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat25.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat26.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat27.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat28.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat29.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat30.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat31.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat32.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat33.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat34.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat35.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat36.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat37.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat38.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat39.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat40.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat41.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat42.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat43.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat44.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat45.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat46.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat47.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat48.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat49.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat50.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat51.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat52.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat53.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat54.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat55.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat56.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat57.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat58.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat59.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat60.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat61.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat62.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat63.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat64.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat65.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat66.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat67.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat68.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat69.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat70.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat71.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat72.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat73.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat74.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat75.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat76.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat77.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat78.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat79.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat80.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat81.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat82.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat83.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat84.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat85.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat86.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat87.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat88.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat89.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat80.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat91.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat92.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat93.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat94.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat95.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat96.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat97.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat98.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat99.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat100.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat101.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat103.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat104.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat105.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat106.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat107.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat108.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat109.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cat110.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/doce.png" >
-                    <img class="imagen-fullscreen" src="./assets/doce1.png" >
-                    <img class="imagen-fullscreen" src="./assets/doce2.png" >
-                    <img class="imagen-fullscreen" src="./assets/cata1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata .jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata9.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/cata12.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/sandi7.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/primitos.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/silvia.jpg" >
+                <img class="imagen-fullscreen" src="./assets/silvi.jpeg" >
+                <img class="imagen-fullscreen" src="./assets/catasilvi.png" >
+                <img class="imagen-fullscreen" src="./assets/catalina.png" >
+                <img class="imagen-fullscreen" src="./assets/catali.png" >
+                <img class="imagen-fullscreen" src="./assets/cat1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat9.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat13.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat14.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat15.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat16.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat17.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat19.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat20.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat21.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat22.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat23.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat24.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat25.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat26.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat27.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat28.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat29.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat30.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat31.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat32.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat33.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat34.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat35.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat36.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat37.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat38.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat39.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat40.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat41.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat42.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat43.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat44.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat45.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat46.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat47.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat48.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat49.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat50.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat51.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat52.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat53.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat54.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat55.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat56.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat57.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat58.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat59.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat60.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat61.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat62.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat63.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat64.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat65.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat66.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat67.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat68.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat69.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat70.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat71.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat72.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat73.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat74.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat75.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat76.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat77.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat78.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat79.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat80.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat81.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat82.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat83.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat84.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat85.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat86.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat87.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat88.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat89.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat80.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat91.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat92.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat93.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat94.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat95.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat96.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat97.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat98.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat99.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat100.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat101.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat103.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat104.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat105.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat106.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat107.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat108.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat109.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cat110.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/doce.png" >
+                <img class="imagen-fullscreen" src="./assets/doce1.png" >
+                <img class="imagen-fullscreen" src="./assets/doce2.png" >
+                <img class="imagen-fullscreen" src="./assets/cata1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata .jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata9.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/cata12.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/sandi7.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/primitos.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
         <div id="imagenes-dani" class="imagenes-i" style="display: none;"> 
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-dani')">Videos de Daniel</button>              
+                <button class="btn" onclick="hideDescripVideos('video-dani')">Videos de Daniel</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-dani')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/dani.png" > 
-                    <img class="imagen-fullscreen" src="./assets/Dani15.png" > 
-                    <img class="imagen-fullscreen" src="./assets/dani4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Hijo.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/doce1.png" >
-                    <img class="imagen-fullscreen" src="./assets/dani5.jpg" >                    
-                    <img class="imagen-fullscreen" src="./assets/doce.png" >
-                    <img class="imagen-fullscreen" src="./assets/dani2.png" >
-                    <img class="imagen-fullscreen" src="./assets/doce2.png" >
-                    <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Paseo Andes.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/familia5.jpg" >          
-                    <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani9.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani8.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani14.png" >
-                    <img class="imagen-fullscreen" src="./assets/dani1.png" >
-                    <img class="imagen-fullscreen" src="./assets/dani2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/Tesla.png" >
-                    <img class="imagen-fullscreen" src="./assets/tesla1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/tina1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/dani12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/dani.png" > 
+                <img class="imagen-fullscreen" src="./assets/Dani15.png" > 
+                <img class="imagen-fullscreen" src="./assets/dani4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Hijo.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/doce1.png" >
+                <img class="imagen-fullscreen" src="./assets/dani5.jpg" >                    
+                <img class="imagen-fullscreen" src="./assets/doce.png" >
+                <img class="imagen-fullscreen" src="./assets/dani2.png" >
+                <img class="imagen-fullscreen" src="./assets/doce2.png" >
+                <img class="imagen-fullscreen" src="./assets/familia3.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Paseo Andes.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/familia5.jpg" >          
+                <img class="imagen-fullscreen" src="./assets/familia6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani9.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani8.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani14.png" >
+                <img class="imagen-fullscreen" src="./assets/dani1.png" >
+                <img class="imagen-fullscreen" src="./assets/dani2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/Tesla.png" >
+                <img class="imagen-fullscreen" src="./assets/tesla1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/tina1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/dani12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
+
         <div id="imagenes-juan" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-juan')">Videos de Juan</button>              
+                <button class="btn" onclick="hideDescripVideos('video-juan')">Videos de Juan</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-juan')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/Mi hija Diana Catalina.png" >
-                    <img class="imagen-fullscreen" src="./assets/yo.jpeg" >
-                    <img class="imagen-fullscreen" src="./assets/yopi10.png" >
-                    <img class="imagen-fullscreen" src="./assets/yopp.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yo4.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yo9.JPG" >                    
-                    <img class="imagen-fullscreen" src="./assets/yo15.jpg" >                    
-                    <img class="imagen-fullscreen" src="./assets/yo17.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/yo18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yopi.png" >
-                    <img class="imagen-fullscreen" src="./assets/yopi1.png" >
-                    <img class="imagen-fullscreen" src="./assets/yo12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yo2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yo1.jpeg" >
-                    <img class="imagen-fullscreen" src="./assets/sandi18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sandi19.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sandi20.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/yo19.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yocorona.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/yoCaballo.jpg" >  
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/Mi hija Diana Catalina.png" >
+                <img class="imagen-fullscreen" src="./assets/yo.jpeg" >
+                <img class="imagen-fullscreen" src="./assets/yopi10.png" >
+                <img class="imagen-fullscreen" src="./assets/yopp.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yo4.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yo9.JPG" >                    
+                <img class="imagen-fullscreen" src="./assets/yo15.jpg" >                    
+                <img class="imagen-fullscreen" src="./assets/yo17.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/yo18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yopi.png" >
+                <img class="imagen-fullscreen" src="./assets/yopi1.png" >
+                <img class="imagen-fullscreen" src="./assets/yo12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yo2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yo1.jpeg" >
+                <img class="imagen-fullscreen" src="./assets/sandi18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sandi19.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sandi20.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/yo19.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yocorona.jpg" >
+                <img class="imagen-fullscreen" src="./assets/yoCaballo.jpg" >  
+            </div>
         </div>
+
         <div id="imagenes-mario" class="imagenes-i" style="display: none;">    
             <div class="button-containerVid">   
-                <button class="btn" onclick="hideImagVideo('video-mario')">Videos de Mario</button>              
+                <button class="btn" onclick="hideDescripVideos('video-mario')">Videos de Mario</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-mario')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">   
-                    <img class="imagen-fullscreen" src="./assets/mario sara.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario1.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/mama37.jpg" >                   
-                    <img class="imagen-fullscreen" src="./assets/mario1.png" >                    
-                    <img class="imagen-fullscreen" src="./assets/mario10.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario11.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario12.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario13.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario15.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario16.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario17.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario18.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario19.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario20.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario21.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario22.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario23.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario24.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario25.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario26.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario27.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario28.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario29.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario30.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/mario4.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/mario5.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/mario31.jpg" >   
-                    <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" >  
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" >  
-                    <img class="imagen-fullscreen" src="./assets/julia4.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia5.jpg">
-                </div>
-            </div>    
+            <div class="contenedor-secundario">   
+                <img class="imagen-fullscreen" src="./assets/mario sara.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario1.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/mama37.jpg" >                   
+                <img class="imagen-fullscreen" src="./assets/mario1.png" >                    
+                <img class="imagen-fullscreen" src="./assets/mario10.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario11.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario12.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario13.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario15.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario16.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario17.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario18.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario19.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario20.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario21.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario22.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario23.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario24.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario25.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario26.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario27.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario28.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario29.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario30.jpg" >
+                <img class="imagen-fullscreen" src="./assets/mario4.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/mario5.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/mario31.jpg" >   
+                <img class="imagen-fullscreen" src="./assets/hermanitos.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" >  
+                <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" >  
+                <img class="imagen-fullscreen" src="./assets/julia4.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia5.jpg">
+            </div>
         </div>
         <div id="imagenes-sebas" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-sebas')">Videos de Sebastian</button>              
+                <button class="btn" onclick="hideDescripVideos('video-sebas')">Videos de Sebastian</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-sebas')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/sebastian1.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/sebas.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian3.jpg" >                    
-                    <img class="imagen-fullscreen" src="./assets/sebastian4.jpg" >                    
-                    <img class="imagen-fullscreen" src="./assets/sebastian5.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian6.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian7.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian8.jpg" >  
-                    <img class="imagen-fullscreen" src="./assets/freddy1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos2.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/primos.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/sebastian5.jpg" > 
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/sebastian1.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/sebas.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian3.jpg" >                    
+                <img class="imagen-fullscreen" src="./assets/sebastian4.jpg" >                    
+                <img class="imagen-fullscreen" src="./assets/sebastian5.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian6.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian7.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian8.jpg" >  
+                <img class="imagen-fullscreen" src="./assets/freddy1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos2.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/primitos1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primitos2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/primos.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian.jpg" >
+                <img class="imagen-fullscreen" src="./assets/sebastian5.jpg" > 
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
+
         <div id="imagenes-isabel" class="imagenes-i" style="display: none;">
+            
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-isabel')">Videos de Maria Isabel</button>              
+                <button class="btn" onclick="hideDescripVideos('video-isabel')">Videos de Maria Isabel</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-isabel')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/maria isabel.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/maria isabel1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/maria isabel3.jpg" >                    
-                </div>
-            </div>    
+            
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/maria isabel.jpg" >
+                <img class="imagen-fullscreen" src="./assets/maria isabel1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/maria isabel3.jpg" >                    
+            </div>
         </div>
+
         <div id="imagenes-fer" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-fer')">Videos de Juan</button>              
+                <button class="btn" onclick="hideDescripVideos('video-fer')">Videos de Juan</button>              
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-fer')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/juanfe.png" alt="">
-                    <img class="imagen-fullscreen" src="./assets/juanfer.jpg" alt="">                    
-                    <img class="imagen-fullscreen" src="./assets/juanfe1.png" alt="">              
-                    <img class="imagen-fullscreen" src="./assets/tina juan mar.jpg" alt="">                     
-                    <img class="imagen-fullscreen" src="./assets/marit5.png" alt="">
-                    <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png" >
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" alt="">  
-                    <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" alt="">  
-                    <img class="imagen-fullscreen" src="./assets/tina-fer.png" alt="">
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/juanfe.png" alt="">
+                <img class="imagen-fullscreen" src="./assets/juanfer.jpg" alt="">                    
+                <img class="imagen-fullscreen" src="./assets/juanfe1.png" alt="">              
+                <img class="imagen-fullscreen" src="./assets/tina juan mar.jpg" alt="">                     
+                <img class="imagen-fullscreen" src="./assets/marit5.png" alt="">
+                <img class="imagen-fullscreen" src="./assets/nena-fer-bomba.png" >
+                <img class="imagen-fullscreen" src="./assets/yop-mario-ney-fer.png" alt="">  
+                <img class="imagen-fullscreen" src="./assets/yop-mario-many-ney.png" alt="">  
+                <img class="imagen-fullscreen" src="./assets/tina-fer.png" alt="">
+            </div>
         </div>
+
         <div id="imagenes-maritza" class="imagenes-i" style="display: none;"> 
             <div class="button-containerVid">
-                <button class="btn" onclick="hideImagVideo('video-maritza')">Videos de Maritza</button>             
+                <button class="btn" onclick="hideDescripVideos('video-maritza')">Videos de Maritza</button>             
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-maritza')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/marit.png">
-                    <img class="imagen-fullscreen" src="./assets/marit1.png">
-                    <img class="imagen-fullscreen" src="./assets/marit2.png">
-                    <img class="imagen-fullscreen" src="./assets/marit3.png">
-                    <img class="imagen-fullscreen" src="./assets/marit4.png">
-                    <img class="imagen-fullscreen" src="./assets/marit5.png">
-                    <img class="imagen-fullscreen" src="./assets/andres-maritza.png"> 
-                    <img class="imagen-fullscreen" src="./assets/maritza.png">                    
-                    <img class="imagen-fullscreen" src="./assets/maritza-niño.png">
-                    <img class="imagen-fullscreen" src="./assets/maritza-abuela.png">                    
-                    <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">
-                    <img class="imagen-fullscreen" src="./assets/julia4.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia5.jpg">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/marit.png">
+                <img class="imagen-fullscreen" src="./assets/marit1.png">
+                <img class="imagen-fullscreen" src="./assets/marit2.png">
+                <img class="imagen-fullscreen" src="./assets/marit3.png">
+                <img class="imagen-fullscreen" src="./assets/marit4.png">
+                <img class="imagen-fullscreen" src="./assets/marit5.png">
+                <img class="imagen-fullscreen" src="./assets/andres-maritza.png"> 
+                <img class="imagen-fullscreen" src="./assets/maritza.png">                    
+                <img class="imagen-fullscreen" src="./assets/maritza-niño.png">
+                <img class="imagen-fullscreen" src="./assets/maritza-abuela.png">                    
+                <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">
+                <img class="imagen-fullscreen" src="./assets/julia4.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia5.jpg">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+            </div>
         </div>
         <div id="imagenes-andres" class="imagenes-i" style="display: none;">
             <div class="button-containerVid">   
-                <button class="btn" onclick="hideImagVideo('video-andres')">Videos de Andrés</button>                
+                <button class="btn" onclick="hideDescripVideos('video-andres')">Videos de Andrés</button>                
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-andres')" >Atras</button> 
 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/andres.jpg">
-                    <img class="imagen-fullscreen" src="./assets/andres1.png">                    
-                    <img class="imagen-fullscreen" src="./assets/andres2.png">
-                    <img class="imagen-fullscreen" src="./assets/andres3.png">                    
-                    <img class="imagen-fullscreen" src="./assets/andres4.png">
-                    <img class="imagen-fullscreen" src="./assets/andress.png">
-                    <img class="imagen-fullscreen" src="./assets/marit5.png">
-                    <img class="imagen-fullscreen" src="./assets/daniela-andres.png">
-                    <img class="imagen-fullscreen" src="./assets/andres-mujer.png">
-                    <img class="imagen-fullscreen" src="./assets/andres-amigos.png">
-                    <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">  
-                    <img class="imagen-fullscreen" src="./assets/andres-daniela-.png">
-                    <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
-                    <img class="imagen-fullscreen" src="./assets/andresC.png" >
-                    <img class="imagen-fullscreen" src="./assets/andresc1.png" >
-                    <img class="imagen-fullscreen" src="./assets/andresc2.png" >
-                    <img class="imagen-fullscreen" src="./assets/andresc3.png" >
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/andres.jpg">
+                <img class="imagen-fullscreen" src="./assets/andres1.png">                    
+                <img class="imagen-fullscreen" src="./assets/andres2.png">
+                <img class="imagen-fullscreen" src="./assets/andres3.png">                    
+                <img class="imagen-fullscreen" src="./assets/andres4.png">
+                <img class="imagen-fullscreen" src="./assets/andress.png">
+                <img class="imagen-fullscreen" src="./assets/marit5.png">
+                <img class="imagen-fullscreen" src="./assets/daniela-andres.png">
+                <img class="imagen-fullscreen" src="./assets/andres-mujer.png">
+                <img class="imagen-fullscreen" src="./assets/andres-amigos.png">
+                <img class="imagen-fullscreen" src="./assets/andres-maritza-daniela-sara.png">  
+                <img class="imagen-fullscreen" src="./assets/andres-daniela-.png">
+                <img class="imagen-fullscreen" src="./assets/julia1.jpg" >
+                <img class="imagen-fullscreen" src="./assets/julia2.jpg" >
+                <img class="imagen-fullscreen" src="./assets/andresC.png" >
+                <img class="imagen-fullscreen" src="./assets/andresc1.png" >
+                <img class="imagen-fullscreen" src="./assets/andresc2.png" >
+                <img class="imagen-fullscreen" src="./assets/andresc3.png" >
+            </div>
         </div>
         <div id="imagenes-manola" class="imagenes-i" style="display: none;">  
             <div class="button-containerVid">    
-                <button class="btn" onclick="hideImagVideo('video-manola')">Videos de Manola</button>                
+                <button class="btn" onclick="hideDescripVideos('video-manola')">Videos de Manola</button>                
                 <button class="btn" onclick="vuelveaInicio()">Ir a Inicio</button>
                 <button type="button" class="botonBotonera" id="botonAtras" onclick="irContenedorAnterior('video-manola')" >Atras</button> 
             </div>
-            <div class="contVideosWrapper">
-                <div class="contenedor-secundario">
-                    <img class="imagen-fullscreen" src="./assets/manola1.jpg">
-                    <img class="imagen-fullscreen" src="./assets/magola isabel.jpg">                       
-                    <img class="imagen-fullscreen" src="./assets/Magola .jpg">                    
-                </div>
-            </div>    
+            <div class="contenedor-secundario">
+                <img class="imagen-fullscreen" src="./assets/manola1.jpg">
+                <img class="imagen-fullscreen" src="./assets/magola isabel.jpg">                       
+                <img class="imagen-fullscreen" src="./assets/Magola .jpg">                    
+            </div>
         </div>
 
         <div id="imagen-fullscreen-container" class="imagen-fullscreen-container"></div>
