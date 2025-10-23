@@ -304,34 +304,8 @@ function toggleButton(button) {
 }
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FULL SCREEN IMAGENES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 /* document.addEventListener('DOMContentLoaded', function () {
- const imagenesFullscreen = document.querySelectorAll('.imagen-fullscreen');
- const fullscreenContainer = document.getElementById('imagen-fullscreen-container');
-
- imagenesFullscreen.forEach(function (imagen) {
-   imagen.addEventListener('click', function () {
-     // Clonar la imagen seleccionada para mostrarla en pantalla completa
-     const imagenClonada = imagen.cloneNode(true);
-     imagenClonada.classList.add('imagen-fullscreen-full');
-     fullscreenContainer.innerHTML = ''; // Limpiar el contenedor antes de agregar la imagen
-     fullscreenContainer.appendChild(imagenClonada);
-
-     // Mostrar el contenedor de imagen en pantalla completa
-     fullscreenContainer.style.display = 'block';
-   });
- });
-
- // Agregar evento de clic al contenedor de imagen en pantalla completa para cerrarlo
- fullscreenContainer.addEventListener('click', function () {
-   // Ocultar el contenedor de imagen en pantalla completa
-   fullscreenContainer.style.display = 'none';
- });
-}); */
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
   const imagenesFullscreen = document.querySelectorAll('.imagen-fullscreen');
   const fullscreenContainer = document.getElementById('imagen-fullscreen-container');
   let indiceActual = 0;
@@ -381,6 +355,109 @@ document.addEventListener('DOMContentLoaded', function () {
         if (indiceActual >= imagenesFullscreen.length) indiceActual = 0;
       }
       mostrarImagen(indiceActual);
+    }
+  });
+}); */
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const imagenesFullscreen = document.querySelectorAll('.imagen-fullscreen');
+  const fullscreenContainer = document.getElementById('imagen-fullscreen-container');
+  let indiceActual = 0;
+  let startX = 0;
+
+  // Variables para zoom
+  let distanciaInicial = 0;
+  let escalaActual = 1;
+  let imagenActiva = null;
+
+  imagenesFullscreen.forEach(function (imagen, i) {
+    imagen.addEventListener('click', function () {
+      indiceActual = i;
+      mostrarImagen(indiceActual);
+    });
+  });
+
+  function mostrarImagen(indice) {
+    const imagen = imagenesFullscreen[indice];
+    if (!imagen) return;
+
+    const imagenClonada = imagen.cloneNode(true);
+    imagenClonada.classList.add('imagen-fullscreen-full');
+    imagenClonada.style.transform = 'scale(1)';
+    imagenClonada.style.transition = 'transform 0.2s ease';
+    fullscreenContainer.innerHTML = '';
+    fullscreenContainer.appendChild(imagenClonada);
+    fullscreenContainer.style.display = 'block';
+
+    imagenActiva = imagenClonada;
+    escalaActual = 1;
+  }
+
+  // Cerrar fullscreen al tocar la imagen
+  fullscreenContainer.addEventListener('click', function () {
+    fullscreenContainer.style.display = 'none';
+  });
+
+  // Soporte táctil para cambiar de imagen
+  fullscreenContainer.addEventListener('touchstart', e => {
+    if (e.touches.length === 1) {
+      startX = e.touches[0].clientX;
+    } else if (e.touches.length === 2) {
+      // Inicio del gesto de zoom
+      const dx = e.touches[1].clientX - e.touches[0].clientX;
+      const dy = e.touches[1].clientY - e.touches[0].clientY;
+      distanciaInicial = Math.hypot(dx, dy);
+    }
+  });
+
+  fullscreenContainer.addEventListener('touchmove', e => {
+    if (e.touches.length === 2 && distanciaInicial > 0) {
+      e.preventDefault();
+      const dx = e.touches[1].clientX - e.touches[0].clientX;
+      const dy = e.touches[1].clientY - e.touches[0].clientY;
+      const distanciaActual = Math.hypot(dx, dy);
+      const factorZoom = distanciaActual / distanciaInicial;
+      const nuevaEscala = Math.min(Math.max(1, factorZoom * escalaActual), 3); // zoom entre 1x y 3x
+
+      if (imagenActiva) {
+        imagenActiva.style.transform = `scale(${nuevaEscala})`;
+      }
+    }
+  });
+
+  fullscreenContainer.addEventListener('touchend', e => {
+    // Si fue un gesto de zoom, actualizar la escala y salir
+    if (e.touches.length === 0 && e.changedTouches.length === 2) {
+      if (imagenActiva) {
+        const match = imagenActiva.style.transform.match(/scale\(([^)]+)\)/);
+        escalaActual = match ? parseFloat(match[1]) : 1;
+      }
+      distanciaInicial = 0;
+      return;
+    }
+
+    // Si fue un solo toque (deslizamiento)
+    if (e.changedTouches.length === 1) {
+      const endX = e.changedTouches[0].clientX;
+      const deltaX = endX - startX;
+
+      // Solo considerar desplazamientos horizontales amplios
+      if (Math.abs(deltaX) > 50 && escalaActual === 1) {
+        if (deltaX > 0) {
+          // Deslizar a la derecha → imagen anterior
+          indiceActual--;
+          if (indiceActual < 0) indiceActual = imagenesFullscreen.length - 1;
+        } else {
+          // Deslizar a la izquierda → siguiente imagen
+          indiceActual++;
+          if (indiceActual >= imagenesFullscreen.length) indiceActual = 0;
+        }
+        mostrarImagen(indiceActual);
+      }
     }
   });
 });
